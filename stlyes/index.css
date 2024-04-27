@@ -1,0 +1,247 @@
+:root {
+  --font: #f6f6f6;
+  --background: #1818a5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "header header header header"
+    "gtable gtable gtable hero"
+    "gtable gtable gtable hero"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.li-item {
+  margin-bottom: 5px;
+}
+.nav-item {
+  background-color: #1818a5;
+  width: 100px;
+  display: block;
+  border-radius: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+}
+.nav-item:hover {
+  background-color: #1c1c2e;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+.classTable {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.imgMain {
+  width: 20%;
+  height: 200px;
+}
+.article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+video {
+  width: 100%;
+  padding: 18px;
+}
+
+.table-title {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: azure;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px 20px 0px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+.navbar-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1818a5;
+  width: 99%;
+  border-radius: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  padding: 8px;
+}
+
+h1 {
+  background-color: #1818a5;
+  display: block;
+  border-radius: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+}
+h2,
+h3 {
+  color: var(--font);
+  background-color: var(--background);
+  width: 50%;
+  margin-inline: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 20px;
+}
+
+p {
+  color: var(--font);
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 15px;
+}
+body {
+  background-image: url(../images/race\ track.jpeg);
+  background-size: cover;
+}
+table {
+  border-radius: 0px 0px 20px 20px;
+  background-color: #f6f6f6;
+  opacity: 0.9;
+  color: blue;
+
+  margin-inline: auto;
+  text-align: center;
+}
+
+th {
+  border: 1px solid white;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#header {
+  grid-area: header;
+}
+
+#header > #logo {
+  width: 20%;
+}
+
+#table {
+  grid-area: gtable;
+}
+
+#main {
+  grid-area: main;
+}
+
+#footer {
+  grid-area: footer;
+  background-color: #6f6f6f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.footer-list-items {
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer-image-item {
+  width: 50%;
+}
+
+.car{
+  width: 15%;
+  border-radius: 50%;
+ margin-left: 60px;
+}
+
+.race{
+  width: 25%;
+  border-radius: 10%;
+    
+
+}
+
+
+.personal {
+  gap: 15px;
+}
+
+.personal .form-input:nth-child(odd) {
+  border-left: 1px solid black;
+}
+
+.fav {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.form-input input:not([type="radio"]) .form-input select,
+.form-input label {
+  display: block;
+}
+
+#hero {
+  grid-area: hero;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+@media only screen and (max-width: 1100px) {
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "header header header header"
+      "gtable gtable gtable gtable"
+      "gtable gtable gtable gtable"
+      "hero hero hero hero"
+      "main main main main"
+      "main main main main"
+      "footer footer footer footer";
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+    margin-bottom: 20px;
+   
+  }
+
+  #hero {
+    grid-area: hero;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  #gtable {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+}
+
